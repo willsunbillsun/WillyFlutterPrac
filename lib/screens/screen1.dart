@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:pleasebeadartfile/shared/menu_drawer.dart';
 
 class Screen1 extends StatelessWidget {
   const Screen1({ Key? key}) : super(key: key);
@@ -7,6 +8,7 @@ class Screen1 extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
         appBar: AppBar(title: const Text('Home Page!!!')),
+        drawer: const MenuDrawer(),
         body: Container(
           decoration: const BoxDecoration(
               image: DecorationImage(
