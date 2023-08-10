@@ -9,6 +9,25 @@ class Screen1 extends StatelessWidget {
     return Scaffold(
         appBar: AppBar(title: const Text('Home Page!!!')),
         drawer: const MenuDrawer(),
+        bottomNavigationBar: BottomNavigationBar(
+          onTap: (int index){
+
+          },
+          items: const [
+            BottomNavigationBarItem(
+              icon: Icon(Icons.home),
+              label: 'Home'
+            ),
+            BottomNavigationBarItem(
+                icon: Icon(Icons.monitor_weight),
+                label: 'Map'
+            ),
+
+
+
+
+          ],
+        ),
         body: Container(
           decoration: const BoxDecoration(
               image: DecorationImage(

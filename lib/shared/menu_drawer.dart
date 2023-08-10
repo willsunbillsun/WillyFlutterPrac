@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import '../screens/map_screen.dart';
+import '../screens/screen1.dart';
 
 class MenuDrawer extends StatelessWidget {
   const MenuDrawer({super.key});
@@ -26,10 +28,24 @@ class MenuDrawer extends StatelessWidget {
           style: TextStyle(color: Colors.white, fontSize: 28))
     ));
     menuTitles.forEach((String element){
+      Widget screen = Container();
       menuItems.add(ListTile(
         title: Text(element,
           style: const TextStyle(fontSize: 18)),
-        onTap: () {}
+        onTap: () {
+          switch(element){
+            case 'Home':
+              screen = Screen1();
+              break;
+            case 'Map':
+              screen = MapScreen();
+              break;
+          }
+          Navigator.of(context).pop();
+          Navigator.of(context).push(
+            MaterialPageRoute(builder: (context) => screen)
+          );
+        }
       ));
     });
     return menuItems;
