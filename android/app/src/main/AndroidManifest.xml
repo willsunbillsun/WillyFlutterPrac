@@ -1,5 +1,6 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android">
     <application
+
         android:label="pleasebeadartfile"
         android:name="${applicationName}"
         android:icon="@mipmap/ic_launcher">
@@ -27,7 +28,18 @@
         <!-- Don't delete the meta-data below.
              This is used by the Flutter tool to generate GeneratedPluginRegistrant.java -->
         <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyDauCIvLTTUdUkKldvKsTj-Hl6_izxGOY4"
+            />
+        <meta-data
             android:name="flutterEmbedding"
-            android:value="2" />
+            android:value="2"
+            />
+            <!--android:name="flutterEmbedding"
+            android:value="2" />-->
+
     </application>
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+    <uses-permission android:name="android.permission.ACCESS_BACKGROUND_LOCATION"/>
+
 </manifest>

@@ -38,7 +38,7 @@ class MenuDrawer extends StatelessWidget {
               screen = Screen1();
               break;
             case 'Map':
-              screen = MapScreen();
+              screen = MapSample();
               break;
           }
           Navigator.of(context).pop();
