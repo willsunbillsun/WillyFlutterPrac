@@ -6,22 +6,6 @@ import 'package:flutter/material.dart';
 import 'package:pleasebeadartfile/shared/menu_drawer.dart';
 import 'package:google_maps_flutter/google_maps_flutter.dart';
 
-
-
-
-/*class MapScreen extends StatelessWidget {
-  const MapScreen({super.key});
-
-  @override
-  Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(title: Text('MapScreen')),
-      drawer: MenuDrawer(),
-      body: GoogleMap()
-    );
-  }
-}*/
-
 class MapSample extends StatefulWidget {
   const MapSample({super.key});
 
@@ -34,15 +18,15 @@ class MapSampleState extends State<MapSample> {
   Completer<GoogleMapController>();
 
   static const CameraPosition _kGooglePlex = CameraPosition(
-    target: LatLng(37.42796133580664, -122.085749655962),
+    target: LatLng(45.5897741, -122.4065245),
     zoom: 14.4746,
   );
 
   static const CameraPosition _kLake = CameraPosition(
-      bearing: 192.8334901395799,
-      target: LatLng(37.43296265331129, -122.08832357078792),
-      tilt: 59.440717697143555,
-      zoom: 19.151926040649414);
+      //bearing: 192.8334901395799,
+      target: LatLng(45.6184, -122.4276), //lacamas lake
+      //tilt: 59.440717697143555,
+      zoom: 15.151926040649414);
 
   @override
   Widget build(BuildContext context) {
