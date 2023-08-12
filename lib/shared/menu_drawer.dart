@@ -24,7 +24,7 @@ class MenuDrawer extends StatelessWidget {
     List<Widget> menuItems = [];
     menuItems.add(const DrawerHeader(
       decoration: BoxDecoration(color: Colors.blueGrey),
-      child: Text('DrawerTitle',
+      child: Text('Will Flutter Map',
           style: TextStyle(color: Colors.white, fontSize: 28))
     ));
     menuTitles.forEach((String element){
